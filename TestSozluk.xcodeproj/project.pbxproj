@@ -24,6 +24,8 @@
 		C96AB85722D5E3D400AAF39E /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AB85622D5E3D400AAF39E /* Term.swift */; };
 		C96AB85A22D5E58A00AAF39E /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AB85922D5E58A00AAF39E /* TermsViewController.swift */; };
 		C96AB85D22D5F7D300AAF39E /* TermsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AB85C22D5F7D300AAF39E /* TermsCell.swift */; };
+		FF56F32B25A9BD7300C22CE8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56F32A25A9BD7300C22CE8 /* HomeViewController.swift */; };
+		FF56F32E25A9CD5700C22CE8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56F32D25A9CD5700C22CE8 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		C96AB85622D5E3D400AAF39E /* Term.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Term.swift; sourceTree = "<group>"; };
 		C96AB85922D5E58A00AAF39E /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		C96AB85C22D5F7D300AAF39E /* TermsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsCell.swift; sourceTree = "<group>"; };
+		FF56F32A25A9BD7300C22CE8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FF56F32D25A9CD5700C22CE8 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				C96AB85622D5E3D400AAF39E /* Term.swift */,
+				FF56F32D25A9CD5700C22CE8 /* Home.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 			children = (
 				C96AB85B22D5F7C000AAF39E /* Cell */,
 				C96AB85922D5E58A00AAF39E /* TermsViewController.swift */,
+				FF56F32A25A9BD7300C22CE8 /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -256,6 +262,7 @@
 				C96AB85722D5E3D400AAF39E /* Term.swift in Sources */,
 				C96AB85A22D5E58A00AAF39E /* TermsViewController.swift in Sources */,
 				C96AB84822D5E24800AAF39E /* ParameterEncoding.swift in Sources */,
+				FF56F32B25A9BD7300C22CE8 /* HomeViewController.swift in Sources */,
 				C96AB85422D5E26300AAF39E /* MainEndpoint.swift in Sources */,
 				C96AB84B22D5E24800AAF39E /* NetworkManager.swift in Sources */,
 				C96AB84E22D5E24800AAF39E /* HTTPTask.swift in Sources */,
@@ -264,6 +271,7 @@
 				C96AB85222D5E24800AAF39E /* EndPointType.swift in Sources */,
 				C96AB85D22D5F7D300AAF39E /* TermsCell.swift in Sources */,
 				C96AB82322D5DE6000AAF39E /* AppDelegate.swift in Sources */,
+				FF56F32E25A9CD5700C22CE8 /* Home.swift in Sources */,
 				C96AB85122D5E24800AAF39E /* NetworkLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,6 +16,8 @@ enum NetworkEnvironment {
 
 public enum MainApi {
     case terms
+    case readme
+    case license
 }
 
 extension MainApi: EndPointType {
@@ -35,6 +37,10 @@ extension MainApi: EndPointType {
         switch self {
         case .terms:
             return "/gunesmes/testsozluk/master/terms.json"
+        case .readme:
+            return "/gunesmes/testsozluk/master/README.md"
+        case .license:
+            return "/gunesmes/testsozluk/master/LICENSE"
         }
     }
     
@@ -44,8 +50,9 @@ extension MainApi: EndPointType {
     
     var task: HTTPTask {
         switch self {
-        case .terms:
-            return .request
+        case .terms: return .request
+        case .readme: return .request
+        case .license: return .request
         }
     }
     
