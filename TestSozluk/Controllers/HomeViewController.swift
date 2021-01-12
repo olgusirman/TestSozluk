@@ -8,21 +8,26 @@
 
 import Foundation
 import UIKit
+import MarkdownView
+import WebKit
 
 final class HomeViewController: UIViewController {
     
     @IBOutlet weak var dictionaryImg: UIImageView!
-    @IBOutlet weak var readmeTxt: UITextView!
+    @IBOutlet var readmeMd: MarkdownView!
+
     // MARK: Properties
     private let networkManager = NetworkManager()
     
     private var home: Home? {
         didSet {
-            readmeTxt.text = home?.readme
+            readmeMd.load(markdown: home?.readme, enableImage: false)
         }
     }
 
     override func viewDidLoad() {
+        super.viewDidLoad()
+
         title = "Anasayfa"
         networkManager.getReadme { (home, errorMessage) in
             DispatchQueue.main.async { [self] in

@@ -7,130 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "94CF0C51-7B6C-4108-B1C0-D586F277C7CF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestSozluk/Controllers/HomeViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "HomeViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A1A4471D-33BA-48BE-B547-F8256CF981FF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestSozluk/Controllers/HomeViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "HomeViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "A1A4471D-33BA-48BE-B547-F8256CF981FF - feb70a4e67dcbac"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TestSozluk.HomeViewController.readmeTxt.getter : Swift.Optional&lt;__C.UITextView&gt;"
-                  moduleName = "TestSozluk"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mesut/Projects/personal/test-sozluk/testdictionary-ios-app/TestSozluk/Controllers/HomeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "88">
-               </Location>
-               <Location
-                  uuid = "A1A4471D-33BA-48BE-B547-F8256CF981FF - 50f047617379f3b8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TestSozluk.HomeViewController.readmeTxt.setter : Swift.Optional&lt;__C.UITextView&gt;"
-                  moduleName = "TestSozluk"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mesut/Projects/personal/test-sozluk/testdictionary-ios-app/TestSozluk/Controllers/HomeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "155">
-               </Location>
-               <Location
-                  uuid = "A1A4471D-33BA-48BE-B547-F8256CF981FF - b7c8cdca0c2a23de"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TestSozluk.HomeViewController.readmeTxt.modify : Swift.Optional&lt;__C.UITextView&gt;"
-                  moduleName = "TestSozluk"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mesut/Projects/personal/test-sozluk/testdictionary-ios-app/TestSozluk/Controllers/HomeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "59">
-               </Location>
-               <Location
-                  uuid = "A1A4471D-33BA-48BE-B547-F8256CF981FF - aae0069bf7f4c207"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TestSozluk.HomeViewController.readmeTxt.modify : Swift.Optional&lt;__C.UITextView&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "TestSozluk"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mesut/Projects/personal/test-sozluk/testdictionary-ios-app/TestSozluk/Controllers/HomeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "64">
-               </Location>
-               <Location
-                  uuid = "A1A4471D-33BA-48BE-B547-F8256CF981FF - a89cb83581c49418"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TestSozluk.HomeViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; TestSozluk.HomeViewController"
-                  moduleName = "TestSozluk"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mesut/Projects/personal/test-sozluk/testdictionary-ios-app/TestSozluk/Controllers/HomeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "176">
-               </Location>
-               <Location
-                  uuid = "A1A4471D-33BA-48BE-B547-F8256CF981FF - 63cfc14e5dcb6a5c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TestSozluk.HomeViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TestSozluk.HomeViewController&gt;"
-                  moduleName = "TestSozluk"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mesut/Projects/personal/test-sozluk/testdictionary-ios-app/TestSozluk/Controllers/HomeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "129">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "F527E0AF-D74F-482F-A4EC-8A3BBA63EBF4"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -164,7 +40,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "3210ABA0-F295-4D73-8F71-BBC7A7D40C0A"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TestSozluk/Networking/Manager/NetworkManager.swift"
@@ -228,7 +104,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "91D6DCBB-6E4C-4ED0-A285-67AD4EA888AD"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TestSozluk/Networking/Manager/NetworkManager.swift"
@@ -244,7 +120,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "1076ED67-C0D0-44A0-8F49-876B19576FF1"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TestSozluk/Controllers/TermsViewController.swift"
@@ -252,6 +128,22 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
             endingLineNumber = "32"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E269D46-37C7-44EF-9E24-1D80D964CB1D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestSozluk/Controllers/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -259,15 +151,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D3E0F0E8-6747-4CD3-8B19-19B78DE65E58"
+            uuid = "D2706C9B-7842-47D0-A5F1-9477D6205C39"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TestSozluk/Controllers/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
