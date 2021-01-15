@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,6 +18,7 @@
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="systemBlueColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="4ps-sc-u07" kind="relationship" relationship="viewControllers" id="4Gt-wK-OV7"/>
@@ -45,7 +46,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="97"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F6z-8e-xkS" id="rsa-dM-vRC">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="96.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="97"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="wYw-rp-GwZ" userLabel="Term">
@@ -84,6 +85,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="0qD-x3-mFE"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0qD-x3-mFE" firstAttribute="bottom" secondItem="5AE-DE-AGp" secondAttribute="bottom" id="Ih2-dq-ZJQ"/>
@@ -91,7 +93,6 @@
                             <constraint firstItem="0qD-x3-mFE" firstAttribute="trailing" secondItem="5AE-DE-AGp" secondAttribute="trailing" id="VRv-21-WSz"/>
                             <constraint firstItem="5AE-DE-AGp" firstAttribute="top" secondItem="0qD-x3-mFE" secondAttribute="top" id="rsf-Oi-GtJ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="0qD-x3-mFE"/>
                     </view>
                     <navigationItem key="navigationItem" id="WP1-qe-8KH"/>
                     <connections>
@@ -102,43 +103,108 @@
             </objects>
             <point key="canvasLocation" x="1842.0289855072465" y="0.0"/>
         </scene>
-        <!--Item-->
+        <!--License-->
         <scene sceneID="gnr-RD-25l">
             <objects>
-                <viewController id="006-2i-UiS" sceneMemberID="viewController">
+                <viewController id="006-2i-UiS" customClass="LicenseViewController" customModule="TestSozluk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tEY-6G-n2Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="license" translatesAutoresizingMaskIntoConstraints="NO" id="YyH-6Q-WDh">
+                                <rect key="frame" x="9" y="104" width="154" height="131"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" text="License" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Oep-Ud-A8v">
+                                <rect key="frame" x="13" y="274" width="381" height="510"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqt-m5-aPL">
+                                <rect key="frame" x="174" y="160" width="78" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="License">
+                                        <attributes>
+                                            <color key="NSColor" red="0.90980392160000001" green="0.40784313729999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="Optima-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ETk-p0-zw8"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="fBd-bH-7z3"/>
+                    <tabBarItem key="tabBarItem" title="License" selectedImage="bookmark.circle" catalog="system" id="fBd-bH-7z3">
+                        <imageReference key="image" image="bookmark.circle.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="licenseTv" destination="Oep-Ud-A8v" id="ZHI-gf-cnl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gAc-0b-STp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932" y="717"/>
+            <point key="canvasLocation" x="931.88405797101461" y="716.51785714285711"/>
         </scene>
         <!--Item-->
         <scene sceneID="afE-IA-QtN">
             <objects>
-                <viewController id="4ps-sc-u07" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VR0-1J-f3q">
+                <viewController id="4ps-sc-u07" customClass="HomeViewController" customModule="TestSozluk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VR0-1J-f3q" customClass="Home">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" customUserAgent="chrome" translatesAutoresizingMaskIntoConstraints="NO" id="AhV-4W-zt4" customClass="MarkdownView" customModule="MarkdownView">
+                                <rect key="frame" x="0.0" y="260" width="414" height="540"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <wkWebViewConfiguration key="configuration" applicationNameForUserAgent="">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences" javaScriptCanOpenWindowsAutomatically="YES"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dictionary" translatesAutoresizingMaskIntoConstraints="NO" id="tyd-FD-wYr">
+                                <rect key="frame" x="8" y="101" width="154" height="131"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvR-ts-jlC">
+                                <rect key="frame" x="170" y="152" width="146" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Neden Sözlük">
+                                        <attributes>
+                                            <color key="NSColor" red="0.90980392160000001" green="0.40784313729999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="Optima-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="5Ga-mU-vWr"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="mUX-16-OiV"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="house.fill" catalog="system" selectedImage="house" id="mUX-16-OiV"/>
+                    <connections>
+                        <outlet property="dictionaryImg" destination="tyd-FD-wYr" id="WvZ-og-0nL"/>
+                        <outlet property="readmeMd" destination="AhV-4W-zt4" id="616-b8-qNk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CX5-6n-ev7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932" y="-708"/>
+            <point key="canvasLocation" x="931.88405797101461" y="-708.48214285714278"/>
         </scene>
-        <!--Item-->
+        <!--Sözlük-->
         <scene sceneID="rte-HH-miS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JQA-Og-j8V" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Y2m-d7-nmz"/>
+                    <tabBarItem key="tabBarItem" title="Sözlük" selectedImage="book" catalog="system" id="Y2m-d7-nmz">
+                        <imageReference key="image" image="book.circle" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gS7-K2-ve5">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -154,4 +220,20 @@
             <point key="canvasLocation" x="931.88405797101461" y="0.0"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="book" catalog="system" width="128" height="102"/>
+        <image name="book.circle" catalog="system" width="128" height="121"/>
+        <image name="bookmark.circle" catalog="system" width="128" height="121"/>
+        <image name="bookmark.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="dictionary" width="512" height="512"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="license" width="512" height="512"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
