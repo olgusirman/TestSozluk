@@ -80,12 +80,9 @@ struct NetworkManager {
                         return
                     }
                     do {
-//                        print(responseData)
                         let readmeTxt = String(data: data!, encoding: .utf8)
                         print(readmeTxt as Any)
-                        
-                        // Map my data to codable object
-                        
+
                         let apiResponse = Home.init(readme: readmeTxt!)
                         completion(apiResponse,nil)
                     }
@@ -95,6 +92,36 @@ struct NetworkManager {
             }
         }
     }
+
+    func getLicense(completion: @escaping (_ home: License?, _ error: String?) -> Void ) {
+        router.request(.license) { data, response, error in
+
+            if error != nil {
+                completion(nil, "Please check your network connection.")
+            }
+
+            if let response = response as? HTTPURLResponse {
+                let result = self.handleNetworkResponse(response)
+                switch result {
+                case .success:
+                    guard data != nil else {
+                        completion(nil, NetworkResponse.noData.rawValue)
+                        return
+                    }
+                    do {
+                        let licenseTxt = String(data: data!, encoding: .utf8)
+                        print(licenseTxt as Any)
+
+                        let apiResponse = License.init(license: licenseTxt!)
+                        completion(apiResponse,nil)
+                    }
+                case .failure(let networkFailureError):
+                    completion(nil, networkFailureError)
+                }
+            }
+        }
+    }
+
 
     fileprivate func handleNetworkResponse(_ response: HTTPURLResponse) -> Result<String>{
         switch response.statusCode {

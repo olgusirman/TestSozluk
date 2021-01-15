@@ -24,34 +24,12 @@ final class HomeViewController: UIViewController {
     private var home: Home? {
         didSet {
             readmeMd.load(markdown: home?.readme, enableImage: false)
-
-            self.readmeMd.onTouchLink = { [weak self] request in
-              guard let url = request.url else { return false }
-
-              if url.scheme == "file" {
-                return false
-              } else if url.scheme == "https" {
-                let safari = SFSafariViewController(url: url)
-                self?.navigationController?.pushViewController(safari, animated: true)
-                return false
-              } else {
-                return false
-              }
-            }
-
         }
     }
 
 
     override func viewDidLoad() {
         title = "Anasayfa"
-        
-        networkManager.getReadme { (home, errorMessage) in
-            DispatchQueue.main.async { [self] in
-                self.home = home!
-            }
-        }
-
         self.readmeMd.onTouchLink = { [weak self] request in
           guard let url = request.url else { return false }
 
@@ -64,6 +42,12 @@ final class HomeViewController: UIViewController {
           } else {
             return false
           }
+        }
+
+        networkManager.getReadme { (home, errorMessage) in
+            DispatchQueue.main.async { [self] in
+                self.home = home!
+            }
         }
     }
 }

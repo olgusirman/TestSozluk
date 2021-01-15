@@ -27,6 +27,9 @@
 		C9F4C49AE711BE1ACD9E689E /* Pods_TestSozluk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A53573DC3DC6AEBC9A278E2 /* Pods_TestSozluk.framework */; };
 		FF56F32B25A9BD7300C22CE8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56F32A25A9BD7300C22CE8 /* HomeViewController.swift */; };
 		FF56F32E25A9CD5700C22CE8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56F32D25A9CD5700C22CE8 /* Home.swift */; };
+		FFD5814925B236A30069E583 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFD5814825B236A30069E583 /* LaunchScreen.storyboard */; };
+		FFEC451725AF975000F2F889 /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC451625AF975000F2F889 /* License.swift */; };
+		FFEC451A25AF97D600F2F889 /* LicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC451925AF97D600F2F889 /* LicenseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		D5761404E771E518C6A687AE /* Pods-TestSozluk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSozluk.release.xcconfig"; path = "Target Support Files/Pods-TestSozluk/Pods-TestSozluk.release.xcconfig"; sourceTree = "<group>"; };
 		FF56F32A25A9BD7300C22CE8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FF56F32D25A9CD5700C22CE8 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		FFD5814825B236A30069E583 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFEC451625AF975000F2F889 /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
+		FFEC451925AF97D600F2F889 /* LicenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,7 @@
 			children = (
 				C96AB82222D5DE6000AAF39E /* AppDelegate.swift */,
 				C96AB82822D5DE6000AAF39E /* Main.storyboard */,
+				FFD5814825B236A30069E583 /* LaunchScreen.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -188,6 +195,7 @@
 			children = (
 				C96AB85622D5E3D400AAF39E /* Term.swift */,
 				FF56F32D25A9CD5700C22CE8 /* Home.swift */,
+				FFEC451625AF975000F2F889 /* License.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,6 +206,7 @@
 				C96AB85B22D5F7C000AAF39E /* Cell */,
 				C96AB85922D5E58A00AAF39E /* TermsViewController.swift */,
 				FF56F32A25A9BD7300C22CE8 /* HomeViewController.swift */,
+				FFEC451925AF97D600F2F889 /* LicenseViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -271,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C96AB82F22D5DE6200AAF39E /* LaunchScreen.storyboard in Resources */,
+				FFD5814925B236A30069E583 /* LaunchScreen.storyboard in Resources */,
 				C96AB82C22D5DE6200AAF39E /* Assets.xcassets in Resources */,
 				C96AB82A22D5DE6000AAF39E /* Main.storyboard in Resources */,
 			);
@@ -329,6 +339,7 @@
 				C96AB85022D5E24800AAF39E /* Router.swift in Sources */,
 				C96AB85722D5E3D400AAF39E /* Term.swift in Sources */,
 				C96AB85A22D5E58A00AAF39E /* TermsViewController.swift in Sources */,
+				FFEC451A25AF97D600F2F889 /* LicenseViewController.swift in Sources */,
 				C96AB84822D5E24800AAF39E /* ParameterEncoding.swift in Sources */,
 				FF56F32B25A9BD7300C22CE8 /* HomeViewController.swift in Sources */,
 				C96AB85422D5E26300AAF39E /* MainEndpoint.swift in Sources */,
@@ -340,6 +351,7 @@
 				C96AB85D22D5F7D300AAF39E /* TermsCell.swift in Sources */,
 				C96AB82322D5DE6000AAF39E /* AppDelegate.swift in Sources */,
 				FF56F32E25A9CD5700C22CE8 /* Home.swift in Sources */,
+				FFEC451725AF975000F2F889 /* License.swift in Sources */,
 				C96AB85122D5E24800AAF39E /* NetworkLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
