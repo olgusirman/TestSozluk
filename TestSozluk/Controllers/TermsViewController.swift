@@ -10,6 +10,7 @@ import UIKit
 
 final class TermsViewController: UIViewController {
     
+    @IBOutlet weak var searchBar: UISearchBar!
     // MARK: Outlets
     @IBOutlet fileprivate weak var tableView: UITableView!
     
@@ -24,9 +25,7 @@ final class TermsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "Sözlük"
-        
+
         networkManager.getTerms { [weak self] (terms, errorMessage) in
             DispatchQueue.main.async {
                 self?.terms = terms
