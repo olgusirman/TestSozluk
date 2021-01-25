@@ -6,5 +6,6 @@ target 'TestSozluk' do
   use_frameworks!
 
   # Pods for TestSozluk
-  pod 'MarkdownView'
+  pod 'MarkdownView', '~> 1.6.0'
+  pod 'SQLite.swift', '~> 0.12.0'
 end
