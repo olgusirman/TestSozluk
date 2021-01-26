@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,9 +24,17 @@
 		C96AB85722D5E3D400AAF39E /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AB85622D5E3D400AAF39E /* Term.swift */; };
 		C96AB85A22D5E58A00AAF39E /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AB85922D5E58A00AAF39E /* TermsViewController.swift */; };
 		C96AB85D22D5F7D300AAF39E /* TermsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AB85C22D5F7D300AAF39E /* TermsCell.swift */; };
+		C9F4C49AE711BE1ACD9E689E /* Pods_TestSozluk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A53573DC3DC6AEBC9A278E2 /* Pods_TestSozluk.framework */; };
+		FF56F32B25A9BD7300C22CE8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56F32A25A9BD7300C22CE8 /* HomeViewController.swift */; };
+		FF56F32E25A9CD5700C22CE8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56F32D25A9CD5700C22CE8 /* Home.swift */; };
+		FFD5814925B236A30069E583 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFD5814825B236A30069E583 /* LaunchScreen.storyboard */; };
+		FFEC451725AF975000F2F889 /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC451625AF975000F2F889 /* License.swift */; };
+		FFEC451A25AF97D600F2F889 /* LicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC451925AF97D600F2F889 /* LicenseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A53573DC3DC6AEBC9A278E2 /* Pods_TestSozluk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestSozluk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4154599BB6CC62779342057B /* Pods-TestSozluk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSozluk.debug.xcconfig"; path = "Target Support Files/Pods-TestSozluk/Pods-TestSozluk.debug.xcconfig"; sourceTree = "<group>"; };
 		C96AB81F22D5DE6000AAF39E /* TestSozluk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSozluk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96AB82222D5DE6000AAF39E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C96AB82922D5DE6000AAF39E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,6 +54,12 @@
 		C96AB85622D5E3D400AAF39E /* Term.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Term.swift; sourceTree = "<group>"; };
 		C96AB85922D5E58A00AAF39E /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		C96AB85C22D5F7D300AAF39E /* TermsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsCell.swift; sourceTree = "<group>"; };
+		D5761404E771E518C6A687AE /* Pods-TestSozluk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSozluk.release.xcconfig"; path = "Target Support Files/Pods-TestSozluk/Pods-TestSozluk.release.xcconfig"; sourceTree = "<group>"; };
+		FF56F32A25A9BD7300C22CE8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FF56F32D25A9CD5700C22CE8 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		FFD5814825B236A30069E583 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFEC451625AF975000F2F889 /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
+		FFEC451925AF97D600F2F889 /* LicenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,17 +67,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F4C49AE711BE1ACD9E689E /* Pods_TestSozluk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D87A3DF38F331BADA71DDA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A53573DC3DC6AEBC9A278E2 /* Pods_TestSozluk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7237E104D77E878A03437BA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4154599BB6CC62779342057B /* Pods-TestSozluk.debug.xcconfig */,
+				D5761404E771E518C6A687AE /* Pods-TestSozluk.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C96AB81622D5DE6000AAF39E = {
 			isa = PBXGroup;
 			children = (
 				C96AB82122D5DE6000AAF39E /* TestSozluk */,
 				C96AB82022D5DE6000AAF39E /* Products */,
+				7237E104D77E878A03437BA6 /* Pods */,
+				3D87A3DF38F331BADA71DDA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +136,7 @@
 			children = (
 				C96AB82222D5DE6000AAF39E /* AppDelegate.swift */,
 				C96AB82822D5DE6000AAF39E /* Main.storyboard */,
+				FFD5814825B236A30069E583 /* LaunchScreen.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -159,6 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				C96AB85622D5E3D400AAF39E /* Term.swift */,
+				FF56F32D25A9CD5700C22CE8 /* Home.swift */,
+				FFEC451625AF975000F2F889 /* License.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +205,8 @@
 			children = (
 				C96AB85B22D5F7C000AAF39E /* Cell */,
 				C96AB85922D5E58A00AAF39E /* TermsViewController.swift */,
+				FF56F32A25A9BD7300C22CE8 /* HomeViewController.swift */,
+				FFEC451925AF97D600F2F889 /* LicenseViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -187,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C96AB83322D5DE6200AAF39E /* Build configuration list for PBXNativeTarget "TestSozluk" */;
 			buildPhases = (
+				38F2FBEAC6245C9896DE13D5 /* [CP] Check Pods Manifest.lock */,
 				C96AB81B22D5DE6000AAF39E /* Sources */,
 				C96AB81C22D5DE6000AAF39E /* Frameworks */,
 				C96AB81D22D5DE6000AAF39E /* Resources */,
+				DDF3F748D9DEEFFBFB77BEB2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,12 +280,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				C96AB82F22D5DE6200AAF39E /* LaunchScreen.storyboard in Resources */,
+				FFD5814925B236A30069E583 /* LaunchScreen.storyboard in Resources */,
 				C96AB82C22D5DE6200AAF39E /* Assets.xcassets in Resources */,
 				C96AB82A22D5DE6000AAF39E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38F2FBEAC6245C9896DE13D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestSozluk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDF3F748D9DEEFFBFB77BEB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestSozluk/Pods-TestSozluk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestSozluk/Pods-TestSozluk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestSozluk/Pods-TestSozluk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C96AB81B22D5DE6000AAF39E /* Sources */ = {
@@ -255,7 +339,9 @@
 				C96AB85022D5E24800AAF39E /* Router.swift in Sources */,
 				C96AB85722D5E3D400AAF39E /* Term.swift in Sources */,
 				C96AB85A22D5E58A00AAF39E /* TermsViewController.swift in Sources */,
+				FFEC451A25AF97D600F2F889 /* LicenseViewController.swift in Sources */,
 				C96AB84822D5E24800AAF39E /* ParameterEncoding.swift in Sources */,
+				FF56F32B25A9BD7300C22CE8 /* HomeViewController.swift in Sources */,
 				C96AB85422D5E26300AAF39E /* MainEndpoint.swift in Sources */,
 				C96AB84B22D5E24800AAF39E /* NetworkManager.swift in Sources */,
 				C96AB84E22D5E24800AAF39E /* HTTPTask.swift in Sources */,
@@ -264,6 +350,8 @@
 				C96AB85222D5E24800AAF39E /* EndPointType.swift in Sources */,
 				C96AB85D22D5F7D300AAF39E /* TermsCell.swift in Sources */,
 				C96AB82322D5DE6000AAF39E /* AppDelegate.swift in Sources */,
+				FF56F32E25A9CD5700C22CE8 /* Home.swift in Sources */,
+				FFEC451725AF975000F2F889 /* License.swift in Sources */,
 				C96AB85122D5E24800AAF39E /* NetworkLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +415,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -388,6 +477,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -408,9 +498,11 @@
 		};
 		C96AB83422D5DE6200AAF39E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4154599BB6CC62779342057B /* Pods-TestSozluk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SMC2YV8Q6;
 				INFOPLIST_FILE = "$(SRCROOT)/TestSozluk/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -425,9 +517,11 @@
 		};
 		C96AB83522D5DE6200AAF39E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5761404E771E518C6A687AE /* Pods-TestSozluk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SMC2YV8Q6;
 				INFOPLIST_FILE = "$(SRCROOT)/TestSozluk/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
