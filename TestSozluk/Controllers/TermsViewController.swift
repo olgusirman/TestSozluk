@@ -33,6 +33,8 @@ final class TermsViewController: UIViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
+        
         networkManager.getTerms { [weak self] (terms, errorMessage) in
             DispatchQueue.main.async {
                 self?.terms = terms
@@ -108,4 +110,16 @@ func hexStringToUIColor (hex:String) -> UIColor {
         blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
         alpha: CGFloat(1.0)
     )
+}
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
